@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#673AB7</color>
+    <color name="colorAccent">#673AB7</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="textColorDayBlack">#000000</color>
+    <color name="textColorDayWhite">#FFFFFF</color>
+    <color name="themeColorThree">#673AB7</color>
+    <color name="btnColorAccent">#673AB7</color>
+    <color name="exColorAccent">#673AB7</color>
+    <color name="exLightPurple">#7953BD</color>
+    <color name="exLightGray">#EEEDEF</color>
+    <color name="drawerWhite">#FFFFFF</color>
+    <color name="backgroundColorAccent">#673AB7</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkGreen">#219108</color>
+    <color name="LightGray">#EEEDEF</color>
+    <color name="LightBlue">#a4dded</color>
+    <color name="darkYellow">#ffc31f</color>
+    <color name="darkRed">#E62600</color>
+    <color name="darkBlue">#4164A8</color>
+    <color name="purple">#800080</color>
+    <color name="lightPurple">#a167c9</color>
+    <color name="pink">#F64C96</color>
+    <color name="brown">#81043A</color>
+    <color name="LightGreen">#4AE427</color>
+    <color name="LightRed">#F32A2A</color>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/date"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="10dp"
+                    android:textColor="@color/textColorDayBlack"
+                    android:textStyle="bold"
+                    android:text="date" />
+
+                <TextView
+
+                    android:id="@+id/notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/textColorDayBlack"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="15dp"
+                    android:text="message" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/emailMechanic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColorDayBlack"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="10dp"
+                    android:text="message" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/confirmationLayout"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <ImageButton
+                        android:id="@+id/decline"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/decline"/>
+
+                    <ImageButton
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/accept"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/approve"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/okBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/textColorDayBlack"
+            android:background="@drawable/delete_dustbin"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/textColorDayBlack"
+            android:background="@drawable/notifications_mechanic" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/textColorDayWhite"
+    tools:context=".CustomerRegisterPage">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="305dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:src="@drawable/customer_regg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer\nREGISTRATION"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorDayBlack"
+                android:textStyle="bold"
+                android:fontFamily="serif" />
+
+            <ViewFlipper
+                android:layout_gravity="center"
+                android:id="@+id/viewFlipper"
+                android:layout_width="360dp"
+                android:layout_height="245dp">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/cUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" User Name"
+                            android:inputType="text"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/cMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Mobile No"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/cLicenseNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" License No"
+                            android:inputType="text"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/cEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Valid Email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+
+                            android:id="@+id/cPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Password"
+                            android:inputType="textPassword"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+
+                            android:id="@+id/cConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Confirm Password"
+                            android:inputType="textPassword"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Spinner
+                        android:id="@+id/vehicleInfoDropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="serif-monospace"
+                        android:singleLine="true"
+                        android:textColor="@color/cardview_dark_background" />
+                </LinearLayout>
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="gone"
+                    android:id="@+id/preBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="back"
+                    android:textAllCaps="true"
+                    android:elevation="30dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/textColorDayWhite"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    android:id="@+id/nextBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_gravity="center"
+                    android:text="Next"
+                    android:textAllCaps="true"
+                    android:elevation="30dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/textColorDayWhite"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="gone"
+                    android:id="@+id/submitBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="center"
+                    android:text="Sumbit"
+                    android:textAllCaps="true"
+                    android:elevation="30dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/textColorDayWhite"
+                    android:textStyle="bold"/></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

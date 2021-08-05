@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/mechanic_name"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/addMechanic"
+        android:icon="@drawable/add_mechanic"
+        android:title="Add Mechanic" />
+
+    <item
+        android:id="@+id/viewMechanic"
+        android:icon="@drawable/idcard"
+        android:title="View Mechanic" />
+
+    <item
+        android:id="@+id/shop"
+        android:icon="@drawable/owner_store"
+        android:title="Shop" />
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notifications_mechanic"
+        android:title="Notification" />
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundColorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textColor="@color/textColorDayWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND decline Message"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose the reason!"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorDayWhite"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorDayWhite"
+            android:fontFamily="serif-monospace"
+            android:text="Irrelevant Records..." />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorDayWhite"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="UnAuthorized User..." />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorDayWhite"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="Error in Mechanic Details..." />
+
+        <CheckBox
+            android:layout_marginTop="5dp"
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorDayWhite"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="Include Correct Profile Image..." />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/okBtn1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/send_mail"/>
+
+</LinearLayout>
+

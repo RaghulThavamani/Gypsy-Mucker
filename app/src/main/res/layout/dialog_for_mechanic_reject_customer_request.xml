@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundColorAccent"
+    android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Reason!"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/textColorDayWhite"
+                    android:textColor="@color/textColorDayWhite"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Iam in Out of Station..." />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/textColorDayWhite"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Iam in Another Service..." />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/textColorDayWhite"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Iam not Getting Trust about your Location..." />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/textColorDayWhite"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Your Location is More then My Limit..." />
+
+
+
+
+
+
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/sendBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:backgroundTint="@color/textColorDayWhite"
+                    android:background="@drawable/send_mail"
+                    android:text="Cancel"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+
+</LinearLayout>

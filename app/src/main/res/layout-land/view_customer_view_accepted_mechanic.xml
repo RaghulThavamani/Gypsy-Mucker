@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Mechanic"
+                android:textAllCaps="true"
+                android:textColor="@color/exColorAccent"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:background="@drawable/mechanic_email" />
+
+                    <TextView
+
+                        android:layout_gravity="center"
+                        android:id="@+id/emailMechanic1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:gravity="end"
+                        android:text="User name"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGray"
+                    android:layout_margin="5dp"/>
+
+                <LinearLayout
+
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:background="@drawable/mechanic_mobile"/>
+                    <TextView
+                        android:id="@+id/mechanicMobile1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:gravity="end"
+                        android:text="User name"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGray"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:background="@drawable/mechanic_name"
+                        />
+                    <TextView
+                        android:gravity="end"
+                        android:id="@+id/mechanicName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:text="User name"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGray"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:background="@drawable/idcard"/>
+                    <TextView
+                        android:gravity="end"
+                        android:id="@+id/aadharNoMechanic1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:text="User name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGray"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:background="@drawable/mechanic_vehicle"/>
+                    <TextView
+                        android:id="@+id/vehicleInfoMec1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:gravity="end"
+                        android:text="User name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGray"
+                    android:layout_margin="5dp"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/status"
+                        android:backgroundTint="@color/textColorDayBlack"/>
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:gravity="end"
+                        android:text="User name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGray"
+                    android:layout_margin="5dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="140dp">
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/cancelService"
+                            android:clickable="true"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/textColorDayWhite"
+                            android:textSize="15dp"
+                            android:text="Cancel Service"
+                            android:background="@drawable/button_background"
+                            android:fontFamily="serif-monospace"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/call"
+                            android:clickable="true"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/textColorDayWhite"
+                            android:textSize="15dp"
+                            android:backgroundTint="@color/darkGreen"
+                            android:text="Call"
+                            android:background="@drawable/button_background"
+                            android:fontFamily="serif-monospace"
+                            android:textStyle="bold" />
+
+
+                        <Button
+                            android:visibility="gone"
+                            android:id="@+id/review"
+                            android:onClick="reviewService"
+                            android:clickable="true"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/textColorDayWhite"
+                            android:textSize="15dp"
+                            android:text="Review Service"
+                            android:background="@drawable/button_background"
+                            android:fontFamily="serif-monospace"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageUrl1"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

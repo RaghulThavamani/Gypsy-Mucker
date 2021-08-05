@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".GmMainLoginPage">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+<LinearLayout
+    android:layout_gravity="center"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:src="@drawable/mechanic_look2g" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="LOGIN"
+                android:onClick="directTOAdminLogin"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@color/textColorDayBlack"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack"
+                android:layout_marginTop="0dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/mLoginEmail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" Email"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/textColorDayBlack"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/mLoginPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint=" Password"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:id="@+id/radioGrp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/cusRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer"
+                    android:textSize="10dp"
+                    android:checked="true"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"/>
+
+                <RadioButton
+                    android:id="@+id/gmRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Mechanic"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"/>
+
+                <RadioButton
+                    android:id="@+id/gmOwnerRadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Owner"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:id="@+id/mForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:clickable="true"
+                android:onClick="directTOForgotIntent"
+                android:layout_gravity="end"
+                android:layout_marginRight="50dp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:textColor="@color/textColorDayBlack"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/mLoginBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textColor="@color/textColorDayWhite"
+                android:elevation="20dp"
+                android:background="@drawable/button_background"
+                />
+
+            <TextView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:id="@+id/mRegisterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="if you are new user register now..."
+                android:clickable="true"
+                android:onClick="directTORegisterIntent"
+                android:layout_gravity="center"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:textColor="@color/textColorDayBlack"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

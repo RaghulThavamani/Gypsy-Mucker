@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/waiting"
+        android:icon="@drawable/done"
+        android:title="New Work" />
+
+    <item
+        android:id="@+id/accepted"
+        android:icon="@drawable/done_all"
+        android:title="On Process" />
+
+</menu>

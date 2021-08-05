@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Mechanic Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorDayBlack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageUrl1"
+                android:src="@drawable/profile_pic_siva"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/shop_image"/>
+                        <TextView
+                            android:id="@+id/shopName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/idcard"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/unionId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:gravity=""
+                            android:textStyle="bold"
+                            android:text="User name"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/mechanic_union"/>
+
+
+                        <TextView
+                            android:id="@+id/unionName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/mechanic_name"
+                            />
+                        <TextView
+                            android:id="@+id/mechanicName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/mechanic_email"
+                            />
+                        <TextView
+                            android:id="@+id/emailMechanic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/mechanic_mobile"/>
+                        <TextView
+                            android:id="@+id/mobileMechanic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/idcard"/>
+                        <TextView
+                            android:id="@+id/aadharNoMechanic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/textColorDayBlack"
+                            android:background="@drawable/mechanic_vehicle"/>
+                        <TextView
+                            android:id="@+id/vehicleInfoMec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:paddingLeft="10dp"
+                            android:text="User name"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColorDayBlack"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp">
+
+
+                    <Button
+                        android:textSize="16sp"
+                        android:text="review"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayWhite"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/review"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="serif-monospace"
+                        android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="Business Profile"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorDayBlack"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/mechanic_name"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+
+                        android:id="@+id/ownerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/mechanic_mobile"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/idcard"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/aadharNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/mechanic_email"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/license_icon"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+
+                        android:id="@+id/shopLicenseNO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/shop_image"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+
+                        android:id="@+id/shopName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/shop_city"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/shopCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/shop_location"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/shopAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:background="@drawable/shop_available"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/availability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/mechanic_vehicle"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/vehicleInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/latitude"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/longitude"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/longitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Profile"
+                        android:textAllCaps="true"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_view"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/imageString"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Profile"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textStyle="bold"
+                        android:textSize="8sp"/>
+                </LinearLayout>
+
+               <LinearLayout
+                   android:layout_marginTop="5dp"
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <ImageButton
+                       android:clickable="true"
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:id="@+id/viewCertificate"
+                       android:onClick="certificateImageDialog"
+                       android:background="@drawable/license_icon"
+                       android:backgroundTint="@color/textColorDayBlack"
+                       android:layout_width="30dp"
+                       android:layout_height="40dp"/>
+
+                   <ImageButton
+                       android:clickable="true"
+                       android:foreground="?android:attr/selectableItemBackground"
+                       android:layout_marginLeft="30dp"
+                       android:id="@+id/viewLocation"
+                       android:onClick="locationDialog"
+                       android:background="@drawable/get_shop_location"
+                       android:layout_width="30dp"
+                       android:layout_height="40dp"/>
+               </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/approve"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/approve"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:id="@+id/decline"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/decline"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

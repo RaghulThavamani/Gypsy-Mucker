@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM"
+        android:fontFamily="serif-monospace"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorDayBlack"
+        android:textStyle="bold"/>
+
+    <TextView
+
+        android:id="@+id/emailAdmin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM"
+        android:fontFamily="serif-monospace"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorDayBlack"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/textColorDayBlack"
+        android:textStyle="bold"/>
+
+    <TextView
+
+        android:id="@+id/emailOwner"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/textColorDayBlack"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/textColorDayBlack"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/message"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Message"
+            android:ems="10"
+            android:inputType="text"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorDayWhite"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:text="Send Message"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:fontFamily="serif-monospace"
+        android:background="@drawable/button_background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+</LinearLayout>

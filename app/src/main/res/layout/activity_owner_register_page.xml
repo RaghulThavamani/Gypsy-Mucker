@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".OwnerRegisterPage">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="300dp"
+        android:layout_height="208dp"
+        android:layout_gravity="center"
+        android:src="@drawable/owner_shop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Shop Owner\nREGISTRATION"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColorDayBlack"
+        android:textStyle="bold"
+        android:fontFamily="serif" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="319dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/licenseNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Shop License No"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Shop Name"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/shopCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Shop City"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Shop Address / Landmark"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/bOwnerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Owner Name"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/bMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Mobile"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/idNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Aadhar No"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/licenseImg"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/chooseBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/upload_photo"
+                android:onClick="getLocation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Upload Shop license Certificate image here!"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorDayBlack"
+                android:textSize="18px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Latitude"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/textColorDayBlack">
+
+                <EditText
+
+                    android:id="@+id/longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:fontFamily="serif-monospace"
+                    android:hint=" Longitude"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/locationBtn"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/get_location"
+                android:onClick="getLocation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Click the map button above to Add shop Location!"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorDayBlack"
+                android:textSize="18px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/textColorDayBlack">
+
+            <EditText
+
+                android:id="@+id/bEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" Valid Email"
+                android:fontFamily="serif-monospace"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/textColorDayBlack"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+
+                android:id="@+id/bPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" Password"
+                android:fontFamily="serif-monospace"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/textColorDayBlack"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+
+                android:id="@+id/bCnfmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" Confirm Password"
+                android:fontFamily="serif-monospace"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/dropDown"
+                android:layout_width="175dp"
+                android:layout_height="50dp"
+                android:textColor="@color/textColorDayBlack"
+                android:fontFamily="serif-monospace"
+                android:singleLine="true"
+                android:drawSelectorOnTop="true"/>
+
+            <Spinner
+                android:id="@+id/dropDown2"
+                android:layout_width="175dp"
+                android:layout_height="50dp"
+                android:textColor="@color/textColorDayBlack"
+                android:fontFamily="serif-monospace"
+                android:singleLine="true"
+                android:drawSelectorOnTop="true"/>
+        </LinearLayout>
+     </LinearLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/nextBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textAllCaps="true"
+            android:elevation="30dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/textColorDayWhite"
+            android:textStyle="bold"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/submitBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textAllCaps="true"
+            android:elevation="30dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/textColorDayWhite"
+            android:textStyle="bold"/></LinearLayout>
+
+
+</LinearLayout>

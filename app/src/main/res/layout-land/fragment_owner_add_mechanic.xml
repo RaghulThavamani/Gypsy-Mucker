@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".OwnerAddMechanic">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mechanic_lookg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer REGISTRATION"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorDayBlack"
+                android:textStyle="bold"
+                android:fontFamily="serif" />
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+                            android:id="@+id/unionId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Union Id"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/unionName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Union Name"
+                            android:inputType="text"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+                            android:id="@+id/mMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Mobile"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+                            android:id="@+id/mechanicName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Mechanic Name"
+                            android:inputType="text"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/aadharNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Aadhar No"
+                            android:inputType="number"
+                            android:textSize="20sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/chooseImage"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/upload_photo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:text="Upload Mechanic Profile image here!"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="18px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack">
+
+                        <EditText
+
+                            android:id="@+id/cEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Valid Email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+
+                            android:id="@+id/cPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Password"
+                            android:inputType="textPassword"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/textColorDayBlack"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/cConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:fontFamily="serif-monospace"
+                            android:hint=" Confirm Password"
+                            android:inputType="textPassword"
+                            android:textSize="20sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Spinner
+                        android:id="@+id/mechanicVehicleInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="serif-monospace"
+                        android:singleLine="true"
+                        android:textColor="@color/cardview_dark_background" />
+
+
+                </LinearLayout>
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:visibility="visible"
+                    android:id="@+id/nextBtn1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_gravity="center"
+                    android:text="Next"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAllCaps="true"
+                    android:elevation="30dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/textColorDayWhite"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/submitBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                   android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Submit"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAllCaps="true"
+                    android:elevation="30dp"
+                    android:background="@drawable/button_background"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/textColorDayWhite"
+                    android:textStyle="bold"/></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

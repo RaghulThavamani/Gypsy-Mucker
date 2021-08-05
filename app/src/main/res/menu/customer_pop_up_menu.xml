@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cusLogout"
+        android:icon="@drawable/customer_exit"
+        android:iconTint="@color/textColorDayBlack"
+        android:title="Logout" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/done_all"
+        android:iconTint="@color/textColorDayBlack"
+        android:title="Menu" />
+
+</menu>

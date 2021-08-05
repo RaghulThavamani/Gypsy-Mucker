@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "502909551216",
+    "firebase_url": "https://gypsy-mucker.firebaseio.com",
+    "project_id": "gypsy-mucker",
+    "storage_bucket": "gypsy-mucker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502909551216:android:16a909a9e903952d58eab5",
+        "android_client_info": {
+          "package_name": "com.example.gypsymucker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502909551216-0d8p3bkvb4rrl1va42j6qa7l4790p77k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBru5CllFHotzwfaKIxknnVnCGH_sSvWMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502909551216-0d8p3bkvb4rrl1va42j6qa7l4790p77k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

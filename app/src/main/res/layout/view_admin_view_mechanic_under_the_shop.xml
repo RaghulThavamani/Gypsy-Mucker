@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageUrl1"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center"
+                    android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/textColorDayBlack"
+                    android:background="@drawable/mechanic_name"
+                    />
+                <TextView
+                    android:gravity="end"
+                    android:id="@+id/mechanicName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:paddingLeft="10dp"
+                    android:text="User name"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColorDayBlack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/textColorDayBlack"
+                        android:background="@drawable/mechanic_vehicle"/>
+                    <TextView
+                        android:id="@+id/vehicleInfoMec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:paddingLeft="10dp"
+                        android:gravity="end"
+                        android:text="User name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorDayBlack"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

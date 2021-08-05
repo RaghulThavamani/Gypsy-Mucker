@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColorAccent"
+    android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="message" />
+
+            <View
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:background="@color/LightGray"/>
+
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="serif-monospace"
+                android:textSize="20dp"
+                android:text="message" />
+
+
+    <ImageButton
+        android:id="@+id/okBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/done"/>
+
+</LinearLayout>

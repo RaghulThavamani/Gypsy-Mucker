@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gypsymucker">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <uses-permission android:name="ANDROID.PERMISSION.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="com.example.myapplication.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.myapplication.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ShowMechanicWasDeleted" />
+        <activity android:name=".MechanicViewCompletedWork" />
+        <activity android:name=".MechanicViewFeedback" />
+        <activity android:name=".AdminDeleteMechanicProfile" />
+        <activity android:name=".AdminUpdateMechanicProfile" />
+        <activity android:name=".AdminViewApprovedMechanics" />
+        <activity android:name=".AdminViewApprovedShop" />
+        <activity android:name=".OwnerUpdateMechanicDetails" />
+        <activity android:name=".CustomerChatBot" />
+        <activity android:name=".AdminAddChatbotData" />
+        <activity android:name=".CustomerNotification" />
+        <activity android:name=".CustomerServiceHall" />
+        <activity android:name=".MechanicNotification" />
+        <activity android:name=".MechanicWork" />
+        <activity android:name=".CustomerSendServiceRequest" />
+        <activity android:name=".AdminApproveMechanic" />
+        <activity android:name=".AdminApproveShop" />
+        <activity android:name=".OwnerHomePage" />
+        <activity android:name=".CustomerHomePage" />
+        <activity android:name=".MechanicProfile" />
+        <activity android:name=".GmAdminHomePage" />
+        <activity android:name=".MechanicHomePage" />
+        <activity android:name=".OwnerRegisterPage" />
+        <activity android:name=".CustomerRegisterPage" />
+        <activity android:name=".GmForgotPasswordPage" />
+        <activity android:name=".GmMainLoginPage"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCuW_jJEnSueQDTgQa6oV7U8-77HI3TvNc" />
+
+        <service
+            android:name=".MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/store_admin" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>
